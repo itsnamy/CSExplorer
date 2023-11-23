@@ -1,25 +1,22 @@
-import 'package:csexplorer/bottom_navbar.dart';
-import 'package:csexplorer/presentation/screens/Home/home.dart';
 import 'package:flutter/material.dart';
+import 'package:my_project/pages/login.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'IKON Chat',
-      debugShowCheckedModeBanner: false,
+      title: 'CSEXplorer',
       theme: ThemeData(
-          appBarTheme: const AppBarTheme(
-        iconTheme: IconThemeData(color: Colors.black),
-        titleTextStyle: TextStyle(
-            color: Colors.black, fontWeight: FontWeight.normal, fontSize: 19),
-        backgroundColor: Colors.white,
-      )),
-      home: const BottomNavBar(),
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 113, 239, 239)),
+        useMaterial3: true,
+      ),
+      home: const LoginPage(title: 'Sign in'),
     );
-  }
-}
