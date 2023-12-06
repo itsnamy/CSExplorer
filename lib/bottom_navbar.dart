@@ -1,5 +1,6 @@
 import 'package:csexplorer/presentation/screens/Home/home.dart';
 import 'package:csexplorer/presentation/screens/Feedback/feedback_form.dart';
+import 'package:csexplorer/presentation/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -63,7 +64,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     const Center(child: Home()),
     const Center(child: FeedbackForm()),
     const Center(child: FeedbackForm()),
-    const Center(child: FeedbackForm()),
+    const Center(child: ProfileScreen()),
   ];
 
   void _popToInitialRoute(int index) {

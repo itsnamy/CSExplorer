@@ -1,3 +1,4 @@
+import "package:csexplorer/bottom_navbar.dart";
 import "package:flutter/material.dart";
 
 class Home extends StatefulWidget {
@@ -13,7 +14,10 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("CSExplorer"),
+        centerTitle: true,
       ),
+      body: const Column(),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }
